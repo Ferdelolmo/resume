@@ -57,6 +57,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        grafana: 'orange',
+        datadog: 'purple',
+        vmware: 'green',
       },
       borderRadius: {
         lg: "var(--radius)",

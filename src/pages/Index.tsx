@@ -28,7 +28,7 @@ const Index = () => {
     {
       title: "Senior Customer Success Manager",
       company: "Grafana Labs",
-      period: "October 2022 - September 2023",
+      period: "February 2021 - September 2023",
       description: "Managed a portfolio of strategic customers, driving product adoption, renewals, and long-term success. Partnered with sales on account planning to identify risks and expansion opportunities, while leading post-sales engagements such as onboarding, adoption, and risk mitigation. Strengthened partnerships through onsite meetings, business reviews, and success stories, and provided continuous product and competitive feedback to align customer needs with value-driven solutions.",
     },
     {
@@ -142,19 +142,41 @@ const Index = () => {
           {/* Experience Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-primary">Experience</h2>
-            <div className="space-y-6">
-              {experiences.map((exp, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{exp.title}</CardTitle>
-                    <CardDescription className="text-base">
-                      <span className="font-semibold text-foreground">{exp.company}</span> • {exp.period}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{exp.description}</p>
-                  </CardContent>
-                </Card>
+            <div className="space-y-8">
+              {Object.entries(
+                experiences.reduce((acc, exp) => {
+                  if (!acc[exp.company]) {
+                    acc[exp.company] = [];
+                  }
+                  acc[exp.company].push(exp);
+                  return acc;
+                }, {} as Record<string, typeof experiences>)
+              ).map(([company, exps]) => (
+                <div key={company} className="relative pl-8">
+                  <div 
+                    className={`absolute left-0 top-0 h-full w-1 rounded-full ${
+                      company === 'Grafana Labs' ? 'bg-grafana' :
+                      company === 'Datadog' ? 'bg-datadog' :
+                      company === 'VMware' ? 'bg-vmware' : 'bg-gray-400'
+                    }`}
+                  ></div>
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground">{company}</h3>
+                  <div className="space-y-6">
+                    {exps.map((exp, index) => (
+                      <Card key={index} className="hover:shadow-lg transition-shadow">
+                        <CardHeader>
+                          <CardTitle className="text-xl">{exp.title}</CardTitle>
+                          <CardDescription className="text-base">
+                            {exp.period}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-muted-foreground">{exp.description}</p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </section>
