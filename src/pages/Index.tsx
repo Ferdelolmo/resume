@@ -9,6 +9,8 @@ import grafanaLogo from '@/gallery/grafana.png';
 import datadogLogo from '@/gallery/datadog.png';
 import vmwareLogo from '@/gallery/vmware.jpg';
 
+import ferPicture from '@/gallery/Fer.jpg';
+
 const Index = () => {
   const skills = [
     "Bash",
@@ -170,9 +172,9 @@ const Index = () => {
           {/* Header Section */}
           <section className="mb-16 text-center">
             <div className="inline-block mb-6 relative">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary via-primary-glow to-accent p-1 shadow-2xl">
-                <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-primary">
-                  JD
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary via-primary-glow to-accent p-1 shadow-2xl">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                  <img src={ferPicture} alt="Fernando del Olmo" className="rounded-full w-full h-full object-cover" />
                 </div>
               </div>
             </div>
