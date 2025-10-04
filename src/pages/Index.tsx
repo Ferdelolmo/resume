@@ -8,7 +8,8 @@ import FlippableCircle from "@/components/ui/FlippableCircle";
 import grafanaLogo from '@/gallery/grafana.png';
 import datadogLogo from '@/gallery/datadog.png';
 import vmwareLogo from '@/gallery/vmware.jpg';
-
+import aiesecLogo from '@/gallery/aiesec.png';
+import universidadvalladolidLogo from '@/gallery/universidadvalladolid.png';
 import ferPicture from '@/gallery/Fer.jpg';
 
 const Index = () => {
@@ -68,11 +69,13 @@ const Index = () => {
       degree: "Master Degree in International Trade and Business",
       institution: "University of Valladolid",
       period: "2013 - 2014",
+      logo: universidadvalladolidLogo,
     },
     {
       degree: "Bachelor in Business Administration",
       institution: "University of Valladolid",
       period: "2006 - 2012",
+      logo: universidadvalladolidLogo,
     },
   ];
 
@@ -152,6 +155,8 @@ const Index = () => {
       organization: "AIESEC",
       period: "Jul 2013 - Aug 2013",
       description: "English teacher and leisure monitor in Karviná (Czech Republic) with a multicultural group of people. Classes were focused for reduced group of children. Activities programming for kids.",
+      logo: aiesecLogo,
+
     },
   ];
 
@@ -193,14 +198,18 @@ const Index = () => {
               </div>
             </div>
             <div className="flex justify-center gap-3">
-              <Button variant="default" size="lg" className="gap-2">
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
-              </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Github className="w-5 h-5" />
-                GitHub
-              </Button>
+              <a href="https://www.linkedin.com/in/fernandodelolmovelayos/" target="_blank" rel="noopener noreferrer">
+                <Button variant="default" size="lg" className="gap-2">
+                  <Linkedin className="w-5 h-5" />
+                  LinkedIn
+                </Button>
+              </a>
+              <a href="https://github.com/Ferdelolmo" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="lg" className="gap-2">
+                  <Github className="w-5 h-5" />
+                  GitHub
+                </Button>
+              </a>
             </div>
           </section>
 
@@ -308,14 +317,17 @@ const Index = () => {
             <h2 className="text-3xl font-bold mb-6 text-primary">Education</h2>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{edu.degree}</CardTitle>
-                    <CardDescription className="text-base">
-                      <span className="font-semibold text-foreground">{edu.institution}</span> • {edu.period}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
+                <div key={index} className="flex items-center gap-4">
+                  <img src={edu.logo} alt={edu.institution} className="w-12 h-12 rounded-full" />
+                  <Card className="hover:shadow-lg transition-shadow flex-grow">
+                    <CardHeader>
+                      <CardTitle className="text-xl">{edu.degree}</CardTitle>
+                      <CardDescription className="text-base">
+                        <span className="font-semibold text-foreground">{edu.institution}</span> • {edu.period}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </div>
               ))}
             </div>
           </section>
@@ -325,17 +337,20 @@ const Index = () => {
             <h2 className="text-3xl font-bold mb-6 text-primary">Volunteering</h2>
             <div className="space-y-6">
               {volunteering.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{item.title}</CardTitle>
-                    <CardDescription className="text-base">
-                      <span className="font-semibold text-foreground">{item.organization}</span> • {item.period}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{item.description}</p>
-                  </CardContent>
-                </Card>
+                <div key={index} className="flex items-center gap-4">
+                  <img src={item.logo} alt={item.organization} className="w-12 h-12 rounded-full" />
+                  <Card className="hover:shadow-lg transition-shadow flex-grow">
+                    <CardHeader>
+                      <CardTitle className="text-xl">{item.title}</CardTitle>
+                      <CardDescription className="text-base">
+                        <span className="font-semibold text-foreground">{item.organization}</span> • {item.period}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </CardContent>
+                  </Card>
+                </div>
               ))}
             </div>
           </section>
