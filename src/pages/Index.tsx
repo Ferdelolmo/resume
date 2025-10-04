@@ -3,6 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Mail, MapPin, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import FlippableCircle from "@/components/ui/FlippableCircle";
+
+import grafanaLogo from '@/gallery/grafana.png';
+import datadogLogo from '@/gallery/datadog.png';
+import vmwareLogo from '@/gallery/vmware.jpg';
 
 const Index = () => {
   const skills = [
@@ -18,35 +23,41 @@ const Index = () => {
       company: "Grafana Labs",
       period: "October 2024 - Present",
       description: "The Observability Architect acts as the primary technical contact for customers, guiding account strategy, growth, and cost optimisation while fostering strong client relationships and advocating for their needs. I drive customer success by designing observability maturity paths, supporting implementation and optimisation, and ensuring technology adoption. Additionally, I provide technical troubleshooting, conduct reviews and RCAs, and lead onboarding, training, and workshops to maximise customer value and best practices.",
+      logo: grafanaLogo
     },
     {
       title: "Senior Customer Success Manager - Strategic customers EMEA",
       company: "Grafana Labs",
       period: "October 2023 - September 2024",
       description: "Focused on high-value, complex accounts, driving long-term growth and renewals through joint account planning, strategic expansion opportunities, executive-level engagement, and value-based advocacy. This role operates at a higher business level, influencing account strategy, retention, and customer roadmap alignment.",
+      logo: grafanaLogo
     },
     {
       title: "Senior Customer Success Manager",
       company: "Grafana Labs",
       period: "February 2021 - September 2023",
       description: "Managed a portfolio of strategic customers, driving product adoption, renewals, and long-term success. Partnered with sales on account planning to identify risks and expansion opportunities, while leading post-sales engagements such as onboarding, adoption, and risk mitigation. Strengthened partnerships through onsite meetings, business reviews, and success stories, and provided continuous product and competitive feedback to align customer needs with value-driven solutions.",
+      logo: grafanaLogo
     },
     {
       title: "Customer Success Manager",
       company: "Datadog",
       period: "July 2018 - January 2021",
       description: "built trusted relationships across a portfolio of customers, driving onboarding, adoption, and growth through upselling and cross-selling opportunities. Partnered closely with sales for seamless transitions, acted as a customer advocate, and advised on best practices to maximise value from the Datadog platform. Proactively monitored usage trends to identify risks, promoted adoption to secure renewals, and collaborated cross-functionally with Support, Product, Finance, and Legal to ensure a positive customer experience and long-term success",
+      logo: datadogLogo
     },{
       title: "Renewals Account Manager",
       company: "VMware",
       period: "May 2017 - March 2018",
       description: "As a Sales Account Manager at VMware, managed renewals and growth across enterprise and global accounts, including Telefonica O2. Drove customer retention through license analysis, renewal management, and cross-selling, while collaborating with sales and channel partners. Consistently exceeded targets, achieving 90%+ retention, surpassing quarterly goals, and earning recognition for top performance in retention and cross-sell success.",
+      logo: vmwareLogo
     },
     {
       title: "Renewals Account Associate",
       company: "VMware",
       period: "July 2016 - May 2017",
       description: "Managed and tracked renewal opportunities while supporting customers and partners through the renewal process. Drove lead generation campaigns and delivered strong results, achieving the highest quota attainment rate in EMEA (Q4 2016) and earning recognition for top customer retention performance (Q1 2017).",
+      logo: vmwareLogo
     },
   ];
 
@@ -61,6 +72,93 @@ const Index = () => {
       institution: "University of Valladolid",
       period: "2006 - 2012",
     },
+  ];
+
+  const courses = [
+    {
+      degree: "Databases Foundation",
+      institution: "Platzi",
+      period: "August 2025",
+    },
+    {
+      degree: "Git and Github",
+      institution: "Platzi",
+      period: "March 2025",
+    },
+    {
+      degree: "AWS Cloud Practitioner Essentials",
+      institution: "Amazon Web Services (AWS)",
+      period: "November 2024",
+    },
+    {
+      degree: "Regular Expressions",
+      institution: "Platzi",
+      period: "November 2024",
+    },{
+      degree: "Server administration  - Resource Management",
+      institution: "Platzi",
+      period: "November 2024",
+    },
+    {
+      degree: "Bash Shell",
+      institution: "Platzi",
+      period: "November 2024",
+    },{
+      degree: "Command Terminal Line",
+      institution: "Platzi",
+      period: "October 2024",
+    },
+    {
+      degree: "Docker Foundation",
+      institution: "Platzi",
+      period: "October 2024",
+    },{
+      degree: "Server administration  - Linux",
+      institution: "Platzi",
+      period: "October 2024",
+    },
+    {
+      degree: "Complete Linux Administration Course",
+      institution: "Udemy",
+      period: "September 2019",
+    },
+    {
+      degree: "Complete course on AWS",
+      institution: "Udemy",
+      period: "July 2019",
+    },
+    {
+      degree: "Sales Management Foundations",
+      institution: "Lynda.com",
+      period: "June 2018",
+    },
+    {
+      degree: "Key Account Management",
+      institution: "Lynda.com",
+      period: "May 2018",
+    },
+    {
+      degree: "Elevator Pitch",
+      institution: "Lynda.com",
+      period: "May 2018",
+    },                
+  ];
+
+  const volunteering = [
+    {
+      title: "English teacher and leisure monitor",
+      organization: "AIESEC",
+      period: "Jul 2013 - Aug 2013",
+      description: "English teacher and leisure monitor in Karviná (Czech Republic) with a multicultural group of people. Classes were focused for reduced group of children. Activities programming for kids.",
+    },
+  ];
+
+  const languages = [
+    { language: "Spanish", proficiency: "Native", flag: "https://flagcdn.com/es.svg" },
+    { language: "Italian", proficiency: "Full professional proficiency", flag: "https://flagcdn.com/it.svg" },
+    { language: "English", proficiency: "Full professional proficiency", flag: "https://flagcdn.com/gb.svg" },
+    { language: "French", proficiency: "Elementary proficiency", flag: "https://flagcdn.com/fr.svg" },
+    { language: "Portuguese", proficiency: "Elementary proficiency", flag: "https://flagcdn.com/pt.svg" },
   ];
 
   return (
@@ -113,7 +211,7 @@ const Index = () => {
                   It all started when I was 10, with a computing course where I learned the ins and outs of Windows 98. Soon after, my parents brought home a Pentium II computer, and I spent countless afternoons tinkering with it, troubleshooting problems, and figuring out how it all worked.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">   
-                  That early curiosity became a lifelong passion. I studied BA but always kept one foot in the tech world, which led to over 8 years of working in the industry. I love solving problems, connecting with people, and helping customers succeed..
+                  That early curiosity became a lifelong passion. I studied BA but always kept one foot in the tech world, which led to over 8 years of working in the industry. I love solving problems, connecting with people, and helping customers succeed.
                 </p>
               </CardContent>
             </Card>
@@ -139,6 +237,25 @@ const Index = () => {
             </Card>
           </section>
 
+          {/* Languages Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-primary">Languages</h2>
+            <Card>
+              <CardContent className="pt-6">
+                <div className="flex flex-wrap justify-center gap-8">
+                  {languages.map((lang) => (
+                    <FlippableCircle
+                      key={lang.language}
+                      language={lang.language}
+                      proficiency={lang.proficiency}
+                      flag={lang.flag}
+                    />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
           {/* Experience Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-primary">Experience</h2>
@@ -152,13 +269,16 @@ const Index = () => {
                   return acc;
                 }, {} as Record<string, typeof experiences>)
               ).map(([company, exps]) => (
-                <div key={company} className="relative pl-8">
+                <div key={company} className="relative pl-16">
+                  <img src={exps[0].logo} alt={company} className="absolute left-0 top-0 w-12 h-12 rounded-full" />
                   <div 
-                    className={`absolute left-0 top-0 h-full w-1 rounded-full ${
-                      company === 'Grafana Labs' ? 'bg-grafana' :
-                      company === 'Datadog' ? 'bg-datadog' :
-                      company === 'VMware' ? 'bg-vmware' : 'bg-gray-400'
-                    }`}
+                    className="absolute left-12 top-0 h-full w-1 rounded-full"
+                    style={{ 
+                      backgroundColor: 
+                        company === 'Grafana Labs' ? 'orange' :
+                        company === 'Datadog' ? 'purple' :
+                        company === 'VMware' ? 'green' : 'gray'
+                    }}
                   ></div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground">{company}</h3>
                   <div className="space-y-6">
@@ -191,6 +311,43 @@ const Index = () => {
                     <CardTitle className="text-xl">{edu.degree}</CardTitle>
                     <CardDescription className="text-base">
                       <span className="font-semibold text-foreground">{edu.institution}</span> • {edu.period}
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Volunteering Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-primary">Volunteering</h2>
+            <div className="space-y-6">
+              {volunteering.map((item, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{item.title}</CardTitle>
+                    <CardDescription className="text-base">
+                      <span className="font-semibold text-foreground">{item.organization}</span> • {item.period}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Courses and Skills Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-primary">Courses and Skills</h2>
+            <div className="space-y-6">
+              {courses.map((course, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{course.degree}</CardTitle>
+                    <CardDescription className="text-base">
+                      <span className="font-semibold text-foreground">{course.institution}</span> • {course.period}
                     </CardDescription>
                   </CardHeader>
                 </Card>
