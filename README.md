@@ -1,74 +1,51 @@
-# Welcome to your Lovable project
+# Resume
 
-## Project info
+This repository provides a customizable digital resume template built with TypeScript. It is designed to help you quickly get started with creating a professional, modern, and easy-to-update resume that can be hosted online or integrated into your personal website or portfolio.
 
-**URL**: https://lovable.dev/projects/6ac97d66-6e68-420c-ac0d-863f75799c19
+## Features
 
-## How can I edit this code?
+- **TypeScript-based**: Ensures type safety, maintainability, and scalability.
+- **Customizable**: Easily modify the structure, layout, and content to suit your unique professional story.
+- **Open for Community Use**: Anyone in the community is welcome to clone, fork, and adapt this project for their personal needs.
+- **Modern Codebase**: Leverages best practices in modern web development for a clean and efficient codebase.
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+To set up and run this project locally, follow these steps:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6ac97d66-6e68-420c-ac0d-863f75799c19) and start prompting.
+```bash
+# Install dependencies
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server (usually runs on http://localhost:3000)
 npm run dev
+
+# Build the project for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Hosting
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+After building the project, you can easily deploy it using GitHub Pages:
 
-**Use GitHub Codespaces**
+1. Push your built files to a branch (commonly `gh-pages`).
+2. Configure your repository settings to use that branch as the source for GitHub Pages.
+3. Your resume will be available online for anyone to view.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+1. Fork or clone this repository.
+2. Customize the content and styling to reflect your personal experience and skills.
+3. Deploy or share your resume as you see fit.
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is open-source and welcomes contributions. If you have improvements, ideas, or want to add features, feel free to open a pull request or submit an issue.
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/6ac97d66-6e68-420c-ac0d-863f75799c19) and click on Share -> Publish.
+This project does not currently have a license file. Please add one if you intend to distribute or use it publicly.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-# resume
+Feel free to make this resume template your own and share your improvements with the community!
