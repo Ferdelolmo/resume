@@ -11,6 +11,9 @@ import vmwareLogo from '@/gallery/vmware.jpg';
 import aiesecLogo from '@/gallery/aiesec.png';
 import universidadvalladolidLogo from '@/gallery/universidadvalladolid.png';
 import ferPicture from '@/gallery/Fer.jpg';
+import offsiteImage from '@/gallery/offsite.jpg';
+import lunchandlearnImage from '@/gallery/lunchandlearnmadrid.jpg';
+import videoImage from '@/gallery/video.png';
 
 const Index = () => {
   const skills = [
@@ -353,6 +356,22 @@ const Index = () => {
                 </div>
               ))}
             </div>
+          </section>
+
+          {/* Webinars and Conferences Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-primary">Webinars and Conferences</h2>
+            <Card>
+              <CardContent className="pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <img src={offsiteImage} alt="Offsite event" className="rounded-lg w-full h-auto" />
+                  <img src={lunchandlearnImage} alt="Lunch and learn event" className="rounded-lg w-full h-auto" />
+                  <a href="https://grafana.com/es/go/webinar/observabilidad-de-aplicaciones-serverless-con-grafana-cloud-y-open-telemetry/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <img src={videoImage} alt="Video conference" className="rounded-lg w-full h-auto" />
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </section>
 
           {/* Courses and Skills Section */}
