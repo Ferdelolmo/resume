@@ -1,0 +1,1 @@
+<p>Mock content for Node.js article.</p>

@@ -1,0 +1,1 @@
+<p>Mock content for CSS article.</p>
