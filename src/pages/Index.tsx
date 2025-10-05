@@ -14,6 +14,7 @@ import ferPicture from '@/gallery/Fer.jpg';
 import offsiteImage from '@/gallery/offsite.jpg';
 import lunchandlearnImage from '@/gallery/lunchandlearnmadrid.jpg';
 import videoImage from '@/gallery/video.png';
+import AudioPlayer from '@/components/ui/AudioPlayer';
 
 const Index = () => {
   const skills = [
@@ -229,6 +230,15 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
+          </section>
+
+          {/* Audio CV Section */}
+          <section className="mb-16 flex justify-center">
+            <AudioPlayer 
+              src="/podcast.mp3" 
+              title="My career and resume in just 4 minutes"
+              description="Relax and listen in!"
+            />
           </section>
 
           {/* Skills Section */}
