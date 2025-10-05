@@ -89,68 +89,82 @@ const Index = () => {
       degree: "Databases Foundation",
       institution: "Platzi",
       period: "August 2025",
+      emoji: "🗃️",
     },
     {
       degree: "Git and Github",
       institution: "Platzi",
       period: "March 2025",
+      emoji: "🐙",
     },
     {
       degree: "AWS Cloud Practitioner Essentials",
       institution: "Amazon Web Services (AWS)",
       period: "November 2024",
+      emoji: "☁️",
     },
     {
       degree: "Regular Expressions",
       institution: "Platzi",
       period: "November 2024",
+      emoji: "🤯",
     },{
       degree: "Server administration  - Resource Management",
       institution: "Platzi",
       period: "November 2024",
+      emoji: "⚙️",
     },
     {
       degree: "Bash Shell",
       institution: "Platzi",
       period: "November 2024",
+      emoji: "🐚",
     },{
       degree: "Command Terminal Line",
       institution: "Platzi",
       period: "October 2024",
+      emoji: "💻",
     },
     {
       degree: "Docker Foundation",
       institution: "Platzi",
       period: "October 2024",
+      emoji: "🐳",
     },{
       degree: "Server administration  - Linux",
       institution: "Platzi",
       period: "October 2024",
+      emoji: "🐧",
     },
     {
       degree: "Complete Linux Administration Course",
       institution: "Udemy",
       period: "September 2019",
+      emoji: "🐧",
     },
     {
       degree: "Complete course on AWS",
       institution: "Udemy",
       period: "July 2019",
+      emoji: "☁️",
     },
     {
       degree: "Sales Management Foundations",
       institution: "Lynda.com",
       period: "June 2018",
+      emoji: "📈",
     },
     {
       degree: "Key Account Management",
       institution: "Lynda.com",
       period: "May 2018",
+      emoji: "🔑",
     },
     {
       degree: "Elevator Pitch",
       institution: "Lynda.com",
       period: "May 2018",
+      emoji: "🎤",
     },                
   ];
 
@@ -397,12 +411,12 @@ const Index = () => {
 
           {/* Courses Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-primary">Courses</h2>
+            <h2 className="text-3xl font-bold mb-6 text-primary">Courses and Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {courses.map((course, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-xl">{course.degree}</CardTitle>
+                    <CardTitle className="text-xl">{course.emoji} {course.degree}</CardTitle>
                     <CardDescription className="text-base">
                       <span className="font-semibold text-foreground">{course.institution}</span> • {course.period}
                     </CardDescription>

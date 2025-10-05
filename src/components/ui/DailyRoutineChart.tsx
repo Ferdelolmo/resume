@@ -11,13 +11,13 @@ import {
 } from "@/components/ui/chart"
 
 const dailyRoutine = [
-  { name: 'morning', value: 10, label: 'Morning Alignment & Updates' },
-  { name: 'product', value: 15, label: 'Product & Enablement Deep Dives' },
-  { name: 'customer', value: 20, label: 'Customer Engagement & Reviews' },
-  { name: 'strategic', value: 15, label: 'Strategic Planning & Success Plans' },
-  { name: 'reporting', value: 15, label: 'Reporting & Consumption Management' },
-  { name: 'ebr', value: 15, label: 'Executive Business Reviews (EBRs)' },
-  { name: 'internal', value: 10, label: 'Internal Alignment & Reporting' },
+  { name: 'morning', value: 10, label: 'Morning Alignment & Updates', emoji: '☀️' },
+  { name: 'product', value: 15, label: 'Product & Enablement Deep Dives', emoji: '🚀' },
+  { name: 'customer', value: 20, label: 'Customer Engagement & Reviews', emoji: '💬' },
+  { name: 'strategic', value: 15, label: 'Strategic Planning & Success Plans', emoji: '🎯' },
+  { name: 'reporting', value: 15, label: 'Reporting & Consumption Management', emoji: '📊' },
+  { name: 'ebr', value: 15, label: 'Executive Business Reviews (EBRs)', emoji: '📈' },
+  { name: 'internal', value: 10, label: 'Internal Alignment & Reporting', emoji: '🤝' },
 ];
 
 const chartConfig = {
@@ -38,11 +38,11 @@ const chartConfig = {
     color: "#FF8042",
   },
   reporting: {
-    label: "Reporting",
+    label: "Internal Reporting",
     color: "#AF19FF",
   },
   ebr: {
-    label: "EBRs",
+    label: "Success Planning & EBRs",
     color: "#FF1919",
   },
   internal: {
@@ -70,7 +70,7 @@ const DailyRoutineChart = () => {
           outerRadius={90}
           strokeWidth={5}
           labelLine={false}
-          label={({ name, value }) => `${chartConfig[name]?.label}: ${value}%`}
+          label={({ payload, value }) => `${payload.emoji} ${chartConfig[payload.name]?.label}: ${value}%`}
         >
           {dailyRoutine.map((entry) => (
             <Cell key={entry.name} fill={`var(--color-${entry.name})`} />
