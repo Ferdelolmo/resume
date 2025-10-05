@@ -22,31 +22,31 @@ const dailyRoutine = [
 
 const chartConfig = {
   morning: {
-    label: "Morning Alignment & Updates",
+    label: "Morning Alignment",
     color: "#0088FE",
   },
   product: {
-    label: "Product & Enablement Deep Dives",
+    label: "Product Deep Dives",
     color: "#00C49F",
   },
   customer: {
-    label: "Customer Engagement & Reviews",
+    label: "Customer Engagement",
     color: "#FFBB28",
   },
   strategic: {
-    label: "Strategic Planning & Success Plans",
+    label: "Strategic Planning",
     color: "#FF8042",
   },
   reporting: {
-    label: "Reporting & Consumption Management",
+    label: "Internal Reporting",
     color: "#AF19FF",
   },
   ebr: {
-    label: "Executive Business Reviews (EBRs)",
+    label: "EBRs",
     color: "#FF1919",
   },
   internal: {
-    label: "Internal Alignment & Reporting",
+    label: "Internal Alignment",
     color: "#19B2FF",
   },
 } satisfies ChartConfig;
@@ -57,7 +57,7 @@ const DailyRoutineChart = () => {
       config={chartConfig}
       className="mx-auto aspect-square h-[500px]"
     >
-      <PieChart>
+      <PieChart margin={{ top: 10, right: 120, bottom: 10, left: 120 }}>
         <ChartTooltip
           cursor={false}
           content={<ChartTooltipContent hideLabel />}
@@ -66,7 +66,8 @@ const DailyRoutineChart = () => {
           data={dailyRoutine}
           dataKey="value"
           nameKey="name"
-          innerRadius={60}
+          innerRadius={50}
+          outerRadius={90}
           strokeWidth={5}
           labelLine
           label={({ name, value }) => `${chartConfig[name]?.label}: ${value}%`}
