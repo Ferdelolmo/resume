@@ -38,7 +38,7 @@ const chartConfig = {
     color: "#FF8042",
   },
   reporting: {
-    label: "Internal Reporting",
+    label: "Reporting",
     color: "#AF19FF",
   },
   ebr: {
@@ -69,7 +69,7 @@ const DailyRoutineChart = () => {
           innerRadius={50}
           outerRadius={90}
           strokeWidth={5}
-          labelLine
+          labelLine={false}
           label={({ name, value }) => `${chartConfig[name]?.label}: ${value}%`}
         >
           {dailyRoutine.map((entry) => (
