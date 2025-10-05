@@ -53,35 +53,30 @@ const chartConfig = {
 
 const DailyRoutineChart = () => {
   return (
-    <div>
-      <div className="text-foreground">Chart should be here</div>
-      <ChartContainer
-        config={chartConfig}
-        className="mx-auto aspect-square h-[400px]"
-      >
-        <PieChart>
-          <ChartTooltip
-            cursor={false}
-            content={<ChartTooltipContent hideLabel />}
-          />
-          <Pie
-            data={dailyRoutine}
-            dataKey="value"
-            nameKey="name"
-            innerRadius={60}
-            strokeWidth={5}
-          >
-            {dailyRoutine.map((entry) => (
-              <Cell key={entry.name} fill={`var(--color-${entry.name})`} />
-            ))}
-          </Pie>
-          <ChartLegend
-            content={<ChartLegendContent nameKey="name" />}
-            className="-translate-y-[2rem] flex-wrap gap-2 [&>*]:basis-1/4 [&>*]:justify-center"
-          />
-        </PieChart>
-      </ChartContainer>
-    </div>
+    <ChartContainer
+      config={chartConfig}
+      className="mx-auto aspect-square h-[500px]"
+    >
+      <PieChart>
+        <ChartTooltip
+          cursor={false}
+          content={<ChartTooltipContent hideLabel />}
+        />
+        <Pie
+          data={dailyRoutine}
+          dataKey="value"
+          nameKey="name"
+          innerRadius={60}
+          strokeWidth={5}
+          labelLine
+          label={({ name, value }) => `${chartConfig[name]?.label}: ${value}%`}
+        >
+          {dailyRoutine.map((entry) => (
+            <Cell key={entry.name} fill={`var(--color-${entry.name})`} />
+          ))}
+        </Pie>
+      </PieChart>
+    </ChartContainer>
   );
 };
 
