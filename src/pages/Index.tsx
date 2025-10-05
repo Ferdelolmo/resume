@@ -384,10 +384,10 @@ const Index = () => {
             </Card>
           </section>
 
-          {/* Courses and Skills Section */}
+          {/* Courses Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-primary">Courses and Skills</h2>
-            <div className="space-y-6">
+            <h2 className="text-3xl font-bold mb-6 text-primary">Courses</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {courses.map((course, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
