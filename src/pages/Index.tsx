@@ -15,6 +15,7 @@ import offsiteImage from '@/gallery/offsite.jpg';
 import lunchandlearnImage from '@/gallery/lunchandlearnmadrid.jpg';
 import videoImage from '@/gallery/video.png';
 import AudioPlayer from '@/components/ui/AudioPlayer';
+import DailyRoutineChart from '@/components/ui/DailyRoutineChart';
 
 const Index = () => {
   const skills = [
@@ -236,7 +237,7 @@ const Index = () => {
           <section className="mb-16 flex justify-center">
             <AudioPlayer 
               src="/podcast.mp3" 
-              title="My career and resume in just 4 minutes"
+              title="My career and resume in just 5 minutes"
               description="Relax and listen in!"
             />
           </section>
@@ -276,6 +277,16 @@ const Index = () => {
                     />
                   ))}
                 </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* A Day in the Life Section */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-primary">🕓 A Day in the Life of my role</h2>
+            <Card>
+              <CardContent className="pt-6">
+                <DailyRoutineChart />
               </CardContent>
             </Card>
           </section>
