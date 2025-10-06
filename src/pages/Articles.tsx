@@ -8,9 +8,9 @@ const Articles = () => {
   const articles = [
     {
       id: 1,
-      slug: "getting-started-with-react-and-typescript",
-      title: "Getting Started with React and TypeScript",
-      description: "Learn how to set up a modern React application with TypeScript, including best practices and common patterns.",
+      slug: "howistartedbuildingwebsites",
+      title: "How I Started Building Websites",
+      description: "A few years ago, building a website felt almost impossible to me. But after connecting some dots and learning from different tools and technologies (especially git) everything slowly started to make sense",
       date: "2024-03-15",
       readTime: "5 min read",
       tags: ["React", "TypeScript", "Web Development"],
