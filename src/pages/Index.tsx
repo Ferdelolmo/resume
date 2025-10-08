@@ -348,7 +348,7 @@ const Index = () => {
                         </CardHeader>
                         <CardContent>
                           <p className="text-muted-foreground">{exp.description}</p>
-                          <TakeAways skills={exp.takeaways} />
+                          <TakeAways skills={exp.takeaways} company={exp.company} />
                         </CardContent>
                       </Card>
                     ))}
