@@ -84,7 +84,7 @@ npm install --save-dev @grafana/faro-rollup-plugin
 
 After rebuilding the project with `npm run build` 🚀 and deploying the changes, data started flowing into Grafana Cloud. Just like that, we had a real-time, out-of-the-box dashboard with valuable user activity insights.
 
-**(Screenshot placeholder)**
+![Alt text for your image](https://i.imgur.com/fEqdSFH.png)
 
 ## Final Thoughts ✨
 
