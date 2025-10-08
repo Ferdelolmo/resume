@@ -20,13 +20,13 @@ const articles = [
 	},
 	{
 		id: 2,
-		slug: "building-scalable-apis-with-nodejs",
-		title: "Building Scalable APIs with Node.js",
+		slug: "faro",
+		title: "How did I start collecting relevant activity and frontend data from my website?",
 		description:
-			"A comprehensive guide to designing and implementing RESTful APIs that can handle millions of requests.",
-		date: "2024-03-10",
+			"Believe it or not, sometimes you learn about a need you didn’t even know you had - then you cannot live without it",
+		date: "2025-10-09",
 		readTime: "8 min read",
-		tags: ["Node.js", "Backend", "API Design"],
+		tags: ["Node.js", "RUM", "Faro"],
 	},
 	{
 		id: 3,
