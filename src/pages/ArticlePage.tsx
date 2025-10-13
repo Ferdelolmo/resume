@@ -30,7 +30,7 @@ const articles = [
 	},
 	{
 		id: 3,
-		slug: "sheets",
+		slug: "sheet",
 		title: "🧠 Real Time Reporting for your (Almost) All life purposes",
 		description:
 			"Connecting Google Sheets with Grafana to build a real-time reporting dashboard — without writing a backend 🚀",
