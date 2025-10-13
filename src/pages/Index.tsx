@@ -33,7 +33,7 @@ const Index = () => {
       period: "October 2024 - Present",
       description: "The Observability Architect acts as the primary technical contact for customers, guiding account strategy, growth, and cost optimisation while fostering strong client relationships and advocating for their needs. I drive customer success by designing observability maturity paths, supporting implementation and optimisation, and ensuring technology adoption. Additionally, I provide technical troubleshooting, conduct reviews and RCAs, and lead onboarding, training, and workshops to maximise customer value and best practices.",
       logo: grafanaLogo,
-      takeaways: ["Go", "eBPF", "Kubernetes", "Terraform", "Ansible"]
+      takeaways: ["Alloy", "eBPF", "Kubernetes", "OTel", "Prometheus", "MySQL", "Loki", "Tempo", "Grafana"]
     },
     {
       title: "Senior Customer Success Manager - Strategic customers EMEA",
@@ -41,7 +41,7 @@ const Index = () => {
       period: "October 2023 - September 2024",
       description: "Focused on high-value, complex accounts, driving long-term growth and renewals through joint account planning, strategic expansion opportunities, executive-level engagement, and value-based advocacy. This role operates at a higher business level, influencing account strategy, retention, and customer roadmap alignment.",
       logo: grafanaLogo,
-      takeaways: ["Customer Success", "Account Management", "SaaS", "Observability"]
+      takeaways: ["Customer Success", "QBRs", "SaaS", "IaaS"]
     },
     {
       title: "Senior Customer Success Manager",
@@ -49,7 +49,7 @@ const Index = () => {
       period: "February 2021 - September 2023",
       description: "Managed a portfolio of strategic customers, driving product adoption, renewals, and long-term success. Partnered with sales on account planning to identify risks and expansion opportunities, while leading post-sales engagements such as onboarding, adoption, and risk mitigation. Strengthened partnerships through onsite meetings, business reviews, and success stories, and provided continuous product and competitive feedback to align customer needs with value-driven solutions.",
       logo: grafanaLogo,
-      takeaways: ["Customer Success", "Account Management", "SaaS", "Observability"]
+      takeaways: ["Success Planning", "Account Management", "SaaS", "Observability"]
     },
     {
       title: "Customer Success Manager",
@@ -57,14 +57,14 @@ const Index = () => {
       period: "July 2018 - January 2021",
       description: "built trusted relationships across a portfolio of customers, driving onboarding, adoption, and growth through upselling and cross-selling opportunities. Partnered closely with sales for seamless transitions, acted as a customer advocate, and advised on best practices to maximise value from the Datadog platform. Proactively monitored usage trends to identify risks, promoted adoption to secure renewals, and collaborated cross-functionally with Support, Product, Finance, and Legal to ensure a positive customer experience and long-term success",
       logo: datadogLogo,
-      takeaways: ["Customer Success", "Account Management", "SaaS", "APM"]
+      takeaways: ["Customer Success", "Account Management", "SaaS", "APM", "CoM", "MEDDIC"]
     },{
       title: "Renewals Account Manager",
       company: "VMware",
       period: "May 2017 - March 2018",
       description: "As a Sales Account Manager at VMware, managed renewals and growth across enterprise and global accounts, including Telefonica O2. Drove customer retention through license analysis, renewal management, and cross-selling, while collaborating with sales and channel partners. Consistently exceeded targets, achieving 90%+ retention, surpassing quarterly goals, and earning recognition for top performance in retention and cross-sell success.",
       logo: vmwareLogo,
-      takeaways: ["Sales", "Account Management", "Enterprise Software"]
+      takeaways: ["Sales", "Account Management", "Cross-selling", "BANT", "Enterprise Software"]
     },
     {
       title: "Renewals Account Associate",
@@ -72,7 +72,7 @@ const Index = () => {
       period: "July 2016 - May 2017",
       description: "Managed and tracked renewal opportunities while supporting customers and partners through the renewal process. Drove lead generation campaigns and delivered strong results, achieving the highest quota attainment rate in EMEA (Q4 2016) and earning recognition for top customer retention performance (Q1 2017).",
       logo: vmwareLogo,
-      takeaways: ["Sales", "Account Management", "Enterprise Software"]
+      takeaways: ["Forecasting", "Account Management", "Renewals"]
     },
   ];
 
