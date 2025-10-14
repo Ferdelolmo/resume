@@ -15,7 +15,7 @@ export const articles: ArticleMeta[] = [
     title: "How I Started Building Websites",
     description:
       "A few years ago, building a website felt almost impossible to me. But after connecting some dots and learning from different tools and technologies (especially git) everything slowly started to make sense",
-    date: "2024-03-15",
+    date: "2025-09-15",
     readTime: "5 min read",
     tags: ["React", "TypeScript", "Web Development"],
   },
@@ -39,6 +39,6 @@ export const articles: ArticleMeta[] = [
     readTime: "6 min read",
     tags: ["Google Sheets", "Grafana", "Reporting"],
   },
-];
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export const findArticleBySlug = (slug: string) => articles.find((article) => article.slug === slug);
