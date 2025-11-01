@@ -325,10 +325,10 @@ const Index = () => {
                   return acc;
                 }, {} as Record<string, typeof experiences>)
               ).map(([company, exps]) => (
-                <div key={company} className="relative pl-16">
-                  <img src={exps[0].logo} alt={company} className="absolute left-0 top-0 w-12 h-12 rounded-full object-contain" />
+                <div key={company} className="relative pl-20">
+                  <img src={exps[0].logo} alt={company} className="absolute left-0 top-0 w-16 h-16 rounded-full object-contain" />
                   <div 
-                    className="absolute left-12 top-0 h-full w-1 rounded-full"
+                    className="absolute left-16 top-0 h-full w-1 rounded-full"
                     style={{ 
                       backgroundColor: 
                         company === 'Grafana Labs' ? 'orange' :
@@ -364,7 +364,7 @@ const Index = () => {
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <img src={edu.logo} alt={edu.institution} className="w-12 h-12 rounded-full object-contain" />
+                  <img src={edu.logo} alt={edu.institution} className="w-16 h-16 rounded-full object-contain" />
                   <Card className="hover:shadow-lg transition-shadow flex-grow">
                     <CardHeader>
                       <CardTitle className="text-xl">{edu.degree}</CardTitle>
@@ -384,7 +384,7 @@ const Index = () => {
             <div className="space-y-6">
               {volunteering.map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <img src={item.logo} alt={item.organization} className="w-12 h-12 rounded-full object-contain" />
+                  <img src={item.logo} alt={item.organization} className="w-16 h-16 rounded-full object-contain" />
                   <Card className="hover:shadow-lg transition-shadow flex-grow">
                     <CardHeader>
                       <CardTitle className="text-xl">{item.title}</CardTitle>
