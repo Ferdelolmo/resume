@@ -279,7 +279,7 @@ const Index = () => {
           {/* Audio CV Section */}
           <section className="mb-16 flex justify-center">
             <AudioPlayer 
-              src="src/Gallery/resume.mp3" 
+              src="https://ia600409.us.archive.org/3/items/podcast_202511/podcast.mp3" 
               title="My career and resume in just 5 minutes"
               description="Relax and listen in!"
             />
