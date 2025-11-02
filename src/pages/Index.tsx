@@ -17,6 +17,7 @@ import videoImage from '@/gallery/video.png';
 import AudioPlayer from '@/components/ui/AudioPlayer';
 import DailyRoutineChart from '@/components/ui/DailyRoutineChart';
 import TakeAways from '@/components/ui/TakeAways';
+import KPIs from '@/components/ui/KPIs';
 
 const Index = () => {
   const skills = [
@@ -49,7 +50,12 @@ const Index = () => {
       period: "February 2021 - September 2023",
       description: "Managed a portfolio of strategic customers, driving product adoption, renewals, and long-term success. Partnered with sales on account planning to identify risks and expansion opportunities, while leading post-sales engagements such as onboarding, adoption, and risk mitigation. Strengthened partnerships through onsite meetings, business reviews, and success stories, and provided continuous product and competitive feedback to align customer needs with value-driven solutions.",
       logo: grafanaLogo,
-      takeaways: ["Customer Success", "Account Management", "SaaS", "Observability"]
+      takeaways: ["Customer Success", "Account Management", "SaaS", "Observability"],
+      kpis: [
+        "Achieved annual renewals target 2021,2022,2023,2024",
+        "30 upsells opportunities closed",
+        "16 multi years contracts conversions"
+      ]
     },
     {
       title: "Customer Success Manager",
@@ -57,14 +63,25 @@ const Index = () => {
       period: "July 2018 - January 2021",
       description: "built trusted relationships across a portfolio of customers, driving onboarding, adoption, and growth through upselling and cross-selling opportunities. Partnered closely with sales for seamless transitions, acted as a customer advocate, and advised on best practices to maximise value from the Datadog platform. Proactively monitored usage trends to identify risks, promoted adoption to secure renewals, and collaborated cross-functionally with Support, Product, Finance, and Legal to ensure a positive customer experience and long-term success",
       logo: datadogLogo,
-      takeaways: ["Customer Success", "Account Management", "SaaS", "APM"]
-    },{
+      takeaways: ["Customer Success", "Account Management", "SaaS", "APM"],
+      kpis: [
+        "President Club 2019 and 2020",
+        "Top Performer CSM EMEA in 2019 and 2020",
+        "Overachievement Booking vs. Target 2019"
+      ]      
+    },
+    {
       title: "Renewals Account Manager",
       company: "VMware",
       period: "May 2017 - March 2018",
       description: "As a Sales Account Manager at VMware, managed renewals and growth across enterprise and global accounts, including Telefonica O2. Drove customer retention through license analysis, renewal management, and cross-selling, while collaborating with sales and channel partners. Consistently exceeded targets, achieving 90%+ retention, surpassing quarterly goals, and earning recognition for top performance in retention and cross-sell success.",
       logo: vmwareLogo,
-      takeaways: ["Sales", "Account Management", "Enterprise Software"]
+      takeaways: ["Sales", "Account Management", "Enterprise Software"],
+      kpis: [
+        "Overachievement in Q2 2017 Booking vs Target (107%)",
+        "Spiff won in Q4 2017: ‘’Highest achievement to INQRR target’’ (customer retention rate)",
+        "Overachievement in Q3 2017 and Q4 2017 for Cross Selling"
+      ]
     },
     {
       title: "Renewals Account Associate",
@@ -72,7 +89,12 @@ const Index = () => {
       period: "July 2016 - May 2017",
       description: "Managed and tracked renewal opportunities while supporting customers and partners through the renewal process. Drove lead generation campaigns and delivered strong results, achieving the highest quota attainment rate in EMEA (Q4 2016) and earning recognition for top customer retention performance (Q1 2017).",
       logo: vmwareLogo,
-      takeaways: ["Sales", "Account Management", "Enterprise Software"]
+      takeaways: ["Sales", "Account Management", "Enterprise Software"],
+      kpis: [
+        "Highest quota attainment rate in EMEA (Q4 2016)",
+        "Top customer retention performance (Q1 2017)"
+      ]
+
     },
   ];
 
@@ -349,6 +371,7 @@ const Index = () => {
                         <CardContent>
                           <p className="text-muted-foreground">{exp.description}</p>
                           <TakeAways skills={exp.takeaways} company={exp.company} />
+                          <KPIs kpis={exp.kpis} company={exp.company} />
                         </CardContent>
                       </Card>
                     ))}
