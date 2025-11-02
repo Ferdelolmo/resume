@@ -26,12 +26,12 @@ const Articles = () => {
     },
     {
       id: 3,
-      slug: "css-grid-vs-flexbox",
-      title: "CSS Grid vs Flexbox: When to Use What",
-      description: "Understanding the differences between CSS Grid and Flexbox, and choosing the right layout system for your project.",
-      date: "2024-03-05",
+      slug: "realTimeReporting",
+      title: "Real time reporting for your (almost) all-life-purposes",
+      description: "One of my biggest deep pleasures dear readers is building things in general. I don’t know why but since I was young I tried to build and construct elements and tools for fun, I was a creative by then at an early stage.",
+      date: "2025-10-22",
       readTime: "6 min read",
-      tags: ["CSS", "Frontend", "Design"],
+      tags: ["Grafana", "Google Spreadsheets", "Google Cloud"],
     },
   ];
 
