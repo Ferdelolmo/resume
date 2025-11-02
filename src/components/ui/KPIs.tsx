@@ -56,7 +56,7 @@ const KPIs: React.FC<KPIsProps> = ({ kpis, company }) => {
         </div>
         <ul className="list-disc list-inside ml-2">
           {kpis.map((kpi, index) => (
-            <li key={index} className="text-sm text-muted-foreground">
+            <li key={index} className="text-sm text-muted-foreground font-bold">
               {kpi}
             </li>
           ))}
