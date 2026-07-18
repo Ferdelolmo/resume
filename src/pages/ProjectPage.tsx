@@ -13,7 +13,7 @@ const projects = [
 		slug: "pizzashop",
 		title: "Pizza Shop",
 		description: "A full-stack pizza ordering application built with React, Node.js, and Stripe for payments.",
-		date: "2024-05-12",
+		date: "2026-05-12",
 		readTime: "3 min read",
 		tags: ["React", "Node.js", "Stripe"],
 	},
