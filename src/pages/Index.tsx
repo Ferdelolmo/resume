@@ -34,7 +34,7 @@ const Index = () => {
       period: "October 2024 - Present",
       description: "The Observability Architect acts as the primary technical contact for customers, guiding account strategy, growth, and cost optimisation while fostering strong client relationships and advocating for their needs. I drive customer success by designing observability maturity paths, supporting implementation and optimisation, and ensuring technology adoption. Additionally, I provide technical troubleshooting, conduct reviews and RCAs, and lead onboarding, training, and workshops to maximise customer value and best practices.",
       logo: grafanaLogo,
-      takeaways: ["Go", "eBPF", "Kubernetes", "Terraform", "Ansible"]
+      takeaways: ["Grafana", "Faro", "Kubernetes", "Bash", "Alloy"]
     },
     {
       title: "Senior Customer Success Manager - Strategic customers EMEA",
@@ -68,7 +68,7 @@ const Index = () => {
         "President Club 2019 and 2020",
         "Top Performer CSM EMEA in 2019 and 2020",
         "Overachievement Booking vs. Target 2019"
-      ]      
+      ]
     },
     {
       title: "Renewals Account Manager",
@@ -137,7 +137,7 @@ const Index = () => {
       institution: "Platzi",
       period: "November 2024",
       emoji: "🤯",
-    },{
+    }, {
       degree: "Server administration  - Resource Management",
       institution: "Platzi",
       period: "November 2024",
@@ -148,7 +148,7 @@ const Index = () => {
       institution: "Platzi",
       period: "November 2024",
       emoji: "🐚",
-    },{
+    }, {
       degree: "Command Terminal Line",
       institution: "Platzi",
       period: "October 2024",
@@ -159,7 +159,7 @@ const Index = () => {
       institution: "Platzi",
       period: "October 2024",
       emoji: "🐳",
-    },{
+    }, {
       degree: "Server administration  - Linux",
       institution: "Platzi",
       period: "October 2024",
@@ -194,7 +194,7 @@ const Index = () => {
       institution: "Lynda.com",
       period: "May 2018",
       emoji: "🎤",
-    },                
+    },
   ];
 
   const volunteering = [
@@ -219,7 +219,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <main className="container mx-auto px-6 pt-24 pb-12">
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
@@ -269,7 +269,7 @@ const Index = () => {
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   It all started when I was 10, with a computing course where I learned the ins and outs of Windows 98. Soon after, my parents brought home a Pentium II computer, and I spent countless afternoons tinkering with it, troubleshooting problems, and figuring out how it all worked.
                 </p>
-                <p className="text-lg leading-relaxed text-muted-foreground">   
+                <p className="text-lg leading-relaxed text-muted-foreground">
                   That early curiosity became a lifelong passion. I studied BA but always kept one foot in the tech world, which led to over 8 years of working in the industry. I love solving problems, connecting with people, and helping customers succeed.
                 </p>
               </CardContent>
@@ -278,8 +278,8 @@ const Index = () => {
 
           {/* Audio CV Section */}
           <section className="mb-16 flex justify-center">
-            <AudioPlayer 
-              src="https://ia600409.us.archive.org/3/items/podcast_202511/podcast.mp3" 
+            <AudioPlayer
+              src="https://ia600409.us.archive.org/3/items/podcast_202511/podcast.mp3"
               title="My career and resume in just 5 minutes"
               description="Relax and listen in!"
             />
@@ -292,9 +292,9 @@ const Index = () => {
               <CardContent className="pt-6">
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill) => (
-                    <Badge 
-                      key={skill} 
-                      variant="secondary" 
+                    <Badge
+                      key={skill}
+                      variant="secondary"
                       className="text-base px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       {skill}
@@ -349,13 +349,13 @@ const Index = () => {
               ).map(([company, exps]) => (
                 <div key={company} className="relative pl-20">
                   <img src={exps[0].logo} alt={company} className="absolute left-0 top-0 w-16 h-16 rounded-full object-contain" />
-                  <div 
+                  <div
                     className="absolute left-16 top-0 h-full w-1 rounded-full"
-                    style={{ 
-                      backgroundColor: 
+                    style={{
+                      backgroundColor:
                         company === 'Grafana Labs' ? 'orange' :
-                        company === 'Datadog' ? 'purple' :
-                        company === 'VMware' ? 'green' : 'gray'
+                          company === 'Datadog' ? 'purple' :
+                            company === 'VMware' ? 'green' : 'gray'
                     }}
                   ></div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground">{company}</h3>
