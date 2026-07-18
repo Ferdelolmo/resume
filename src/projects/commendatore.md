@@ -21,4 +21,4 @@ This application helps organise everything required to plan a wedding by keeping
 
 ## Repo link
 
-This is the repository link: https://github.com/Ferdelolmo/commendatore/
+[GitHub Repository](https://github.com/Ferdelolmo/commendatore/)

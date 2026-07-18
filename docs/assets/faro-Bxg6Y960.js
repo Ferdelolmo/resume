@@ -1,0 +1,1 @@
+var e=`/assets/faro-k9LpHvoC.md`;export{e as default};

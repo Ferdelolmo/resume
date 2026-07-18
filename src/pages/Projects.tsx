@@ -29,7 +29,7 @@ const Projects = () => {
       slug: "commendatore",
       title: "Commendatore",
       description: "A comprehensive wedding planning application built with React and Supabase.",
-      date: "2026-07-01",
+      date: "2026-07-19",
       readTime: "4 min read",
       tags: ["React", "TypeScript", "Supabase"],
     },

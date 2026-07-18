@@ -10,7 +10,7 @@ The story behind this project lies on a good friend of mine, that owns this busi
 - **Pricing API**
 - **Calendar availability API**
 - **Booking API**
-- **Email contact section**
+- **Contact section**
 
 ## Booking Request Form
 
@@ -30,5 +30,5 @@ The site features an enquiry/request form (not a live availability booking engin
 
 ## Links
 
-- **Repository**: https://github.com/colecovision0-del/casa-itaca
-- **Website**: https://www.itacasavacanze.com/
+- **Repository**: [GitHub Repository](https://github.com/colecovision0-del/casa-itaca)
+- **Website**: [https://www.itacasavacanze.com/](https://www.itacasavacanze.com/)

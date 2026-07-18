@@ -15,10 +15,6 @@ This helped me understand the ins and outs of deploying Grafana for observabilit
 
 I mingled too much with italians, plus recently married a beautiful italian woman, so that means at this point I also became very opinionated about pizzas. That also means that ananas is absolutely not allowed in my pizza shop. Try out what happens if you try to add this topping, I dare you :)  🤌
 
-## Repo link
-
-This is the repository link: https://github.com/FerdelOlmo/pizzashop
-
 
 Here is a small snippet of how the cart is initialized:
 
@@ -28,4 +24,6 @@ cart.addItem({ id: 1, name: 'Margherita', toppings: 'Mozzarella' });
 console.log(cart.getTotal());
 ```
 
-Enjoy your pizza!
+## Repo link
+
+This is the repository link: https://github.com/FerdelOlmo/pizzashop
