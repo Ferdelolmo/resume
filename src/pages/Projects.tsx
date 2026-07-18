@@ -15,6 +15,24 @@ const Projects = () => {
       readTime: "3 min read",
       tags: ["React", "Node.js", "Stripe"],
     },
+    {
+      id: 2,
+      slug: "casa-itaca",
+      title: "Casa Itaca Vacanze",
+      description: "Public website for Casa Itaca Vacanze.",
+      date: "2026-06-15",
+      readTime: "2 min read",
+      tags: ["React", "Tailwind"],
+    },
+    {
+      id: 3,
+      slug: "commendatore",
+      title: "Commendatore",
+      description: "A comprehensive wedding planning application built with React and Supabase.",
+      date: "2026-07-01",
+      readTime: "4 min read",
+      tags: ["React", "TypeScript", "Supabase"],
+    },
   ];
 
   return (
